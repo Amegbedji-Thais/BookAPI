@@ -1,5 +1,10 @@
-package com.example.bookapi.dao;
+package com.example.bookapi.repository;
 
-public class Repository {
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookRepository extends JpaRepository<Book, Integer> {
+
 
 }
